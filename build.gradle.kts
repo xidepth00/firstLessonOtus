@@ -1,10 +1,13 @@
+val projectGroup: String by project
+val projectVersion: String by project
+
 plugins {
     kotlin("jvm") version "1.8.20"
     application
 }
 
-group = "org.example"
-version = "1.0-SNAPSHOT"
+group = projectGroup
+version = projectVersion
 
 repositories {
     mavenCentral()
